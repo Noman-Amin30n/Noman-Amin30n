@@ -1,118 +1,166 @@
 <div align="center">
 
-# 👋 Hi there, I'm Noman Amin
+# Hey, I'm Noman
 
-### Full-Stack Developer | Open Source Enthusiast | Tech Innovator
+### Full-stack developer working mainly in Next.js, TypeScript, and MongoDB
 
-[![GitHub followers](https://img.shields.io/github/followers/Noman-Amin30n?style=social)](https://github.com/Noman-Amin30n)
-[![GitHub User's stars](https://img.shields.io/github/stars/Noman-Amin30n?style=social)](https://github.com/Noman-Amin30n)
+**If "I need a working website/app and someone I can actually talk to about it" sounds like you, keep reading.**
+
+[![Email](https://img.shields.io/badge/Email-nomankhan30n%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:nomankhan30n@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-nomanameen.vercel.app-000000?style=flat-square&logo=vercel&logoColor=white)](https://nomanameen.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Noman--Amin30n-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Noman-Amin30n)
+<!-- Add your real LinkedIn once the URL is fixed:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR-HANDLE) -->
+
+![Experience](https://img.shields.io/badge/Experience-3%2B%20Years-2ea44f?style=flat-square)
+![Availability](https://img.shields.io/badge/Availability-Open%20for%20Freelance-brightgreen?style=flat-square)
+![Response Time](https://img.shields.io/badge/Response%20Time-%3C24h-blue?style=flat-square)
+![Location](https://img.shields.io/badge/Based%20in-Karachi%2C%20Pakistan%20(GMT%2B5)-orange?style=flat-square)
 
 </div>
 
 ---
 
-## 🎯 About Me
+## About
 
-Passionate developer with a strong focus on creating efficient, scalable, and user-friendly solutions. I love exploring new technologies and contributing to meaningful projects. With a keen interest in both frontend and backend development, I strive to deliver comprehensive solutions that make an impact.
+I've been building web apps full-time for a bit over three years now, mostly on the Next.js/TypeScript/MongoDB stack — data model to deployment, not just the UI layer. Most of my work has been for small businesses and solo founders who need something built right the first time, since they usually can't afford to have it rebuilt six months later.
 
-- 🔭 Currently working on innovative projects
-- 🌱 Continuously learning new technologies and best practices
-- 💡 Interested in Web Development, Cloud Computing, and AI/ML
-- 🤝 Open to collaboration on exciting projects
-- 📫 Reach me at: [nomankhan30n@gmail.com](mailto:nomankhan30n@gmail.com)
+A few things I care about on every project:
+
+- I plan the data model and API before I open a component file. Skipping this is how projects turn into a mess three weeks in.
+- Auth, input validation, and query performance aren't things I bolt on at the end — they're part of the first draft.
+- If it's client work, it needs to actually run in production, not just look good in a demo.
+- I'll explain things in plain terms if you're not technical, and skip the hand-holding if you are.
+
+---
+
+## What I Can Build For You
+
+| Service | What that actually means |
+|---|---|
+| **Full-stack web apps** | Next.js frontend, an API layer (Express or Next.js route handlers), MongoDB behind it, deployed and working |
+| **E-commerce & admin dashboards** | Storefront plus the boring-but-necessary backend: inventory, orders, customer data, basic analytics |
+| **Business systems** | Inventory tracking, billing/invoicing, that kind of internal tooling most off-the-shelf software gets wrong for your specific process |
+| **Frontend builds** | Turning a design or a rough idea into a working React/Next.js UI with Tailwind and ShadCN, responsive by default |
+| **APIs** | REST APIs, typed Mongoose schemas, proper validation — built to be used by more than one client if needed |
+| **Maintenance & new features** | Jumping into an existing Next.js/MERN codebase without breaking what already works |
+
+---
+
+## Some Things I've Built
+
+**E-commerce platform + admin dashboard**
+A full storefront paired with an admin side for managing products, orders, and customers. Built this as my main portfolio piece, so it's the most "finished" of everything here.
+Stack: Next.js, TypeScript, MongoDB, deployed on Vercel.
+→ [view repo](https://github.com/Noman-Amin30n/Ecommerce_Next)
+
+**MedStore — stock & billing system for a pharmacy**
+This one's real client work, not a portfolio project. A local medical store was tracking inventory and writing invoices by hand. Built a system that handles batch expiry (oldest stock sells first, automatically), generates PDF invoices, and keeps a full audit trail of every stock movement. Went through it in phases — auth and foundation first, then inventory, then billing.
+Stack: Next.js 14, TypeScript in strict mode, MongoDB/Mongoose, Zod, JWT.
+🔒 Private repo (client project) — happy to walk through it live
+
+**AI chat platform**
+Real-time chat app with an AI layer for context-aware responses.
+Stack: Next.js 16, real-time messaging.
+→ [view repo](https://github.com/Noman-Amin30n/AI-Chats-Next)
+
+**Code snippets manager**
+A tool for saving and organizing code snippets — auth, full CRUD, syntax highlighting across languages.
+→ [view repo](https://github.com/Noman-Amin30n/Snippets-app)
+
+<details>
+<summary>A few earlier things</summary>
+
+- A handful of clone builds (Amazon, a Facebook signup flow, and my SMIT Web Development course assignments) from earlier on, mostly frontend practice
+
+</details>
+
+---
+
+## The MedStore Case Study (short version)
+
+The store owner was tracking stock and writing invoices by hand — the usual problems: stock counts that didn't match reality, expired batches sold ahead of older ones, no record of who changed what.
+
+I worked through it spec-first: wrote out the data model and rules before touching UI code (things like "stock quantities always stored in base units, converted for display" and "oldest-expiring batch sells first, no exceptions"). Every multi-step write — sell an item, adjust stock, log the change — happens as one atomic transaction, so a crash mid-sale can't leave the numbers wrong. Invoices are snapshotted when they're created, so they remain accurate even if a product's price changes later.
+
+Shipped in three phases: auth and foundation, then inventory, then billing and invoicing.
+
+---
+
+## How I Work
+
+Roughly, this is how a project goes:
+
+1. **Talk it through** — what are you actually trying to solve, not just what feature you think you need
+2. **Write the spec** — data model, API contract, how the screens fit together, before any real code
+3. **Build in chunks** — you see working pieces along the way, not one big reveal at the end
+4. **Harden it** — validation, error handling, and the security basics get checked before anything ships
+5. **Ship and stick around** — help with deployment, plus a window afterward for fixes
+
+```
+Inquiry → Scope & quote → Spec → Build → Review → Deploy → Support
+```
 
 ---
 
 ## 💻 Tech Stack
 
-<div align="center">
+**Languages:** ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-### Languages
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+**Frontend:** ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![Tailwind](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![ShadCN](https://img.shields.io/badge/-ShadCN%2Fui-000000?style=flat-square)
 
-### Frontend
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
+**Backend:** ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white)
 
-### Backend
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white)
+**Database:** ![MongoDB](https://img.shields.io/badge/-MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white) ![Mongoose](https://img.shields.io/badge/-Mongoose-880000?style=flat-square)
 
-### Databases
-![MongoDB](https://img.shields.io/badge/-MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white)
-![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-
-### Tools & Platforms
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
-
-</div>
+**Tools:** ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white) ![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)`
 
 ---
 
-## 🏆 Highlighted Projects
+## Background
 
-<div align="center">
-
-| Project | Description | Tech Stack |
-|---------|-------------|-----------|
-| [E-commerce with Admin Dashboard](https://github.com/Noman-Amin30n/Ecommerce_Next) | A comprehensive e-commerce store with admin dashboard for managing e-commerce operations, including product management, order tracking, analytics, and customer management. Built with modern technologies for optimal performance. |
-| [Code Snippets Manager](https://github.com/Noman-Amin30n/Snippets-app) | A comprehensive platform for developers to create, and manage code snippets. Features include secure user authentication, a powerful code editor with syntax highlighting for multiple languages, and full CRUD functionality. |
-| [AI Chat Platform](https://github.com/Noman-Amin30n/AI-Chats-Next) | A modern chat platform integrating generative AI for intelligent, context-aware conversations. Built with Next.js 16, featuring real-time messaging, and AI-powered response generation. |
-
-</div>
+- Full Stack Web Development — coursework/certification
+- AI agent integration & chatbot development
+- Built and shipped MedStore end-to-end for a real client, spec to deployment
+- Working through [100 Days of TypeScript](https://github.com/Noman-Amin30n/100-Days-Typescript-Challenge) — still going
 
 ---
 
-## 📊 GitHub Statistics
+## Availability
 
-<div align="center">
+Currently open for freelance work and entry-level remote roles. Mostly targeting the US, UK, Canada, and Australia — time zone difference isn't a problem, I work async well.
 
-![Noman Ameen GitHub stats](https://github-readme-stats.vercel.app/api?username=Noman-Amin30n&theme=tokyonight&show_icons=true&hide_border=true&count_private=true)
+`[Fill in: how many projects you can realistically take at once, and whether you prefer contract, part-time, or full-time]`
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Noman-Amin30n&theme=tokyonight&layout=compact&hide_border=true)
-
-</div>
+Usually reply within 24 hours.
 
 ---
 
-## 🎓 Certifications & Learning
+## Get in Touch
 
-- 🎯 Full Stack Web Development
-- 🤖 AI Agents integration and Chatbot Development
+Got a project in mind? The easiest way to reach me is by email.
 
----
+- **[Send a project inquiry](mailto:nomankhan30n@gmail.com?subject=Project%20Inquiry)** — tell me what you're trying to build
+- **[Hiring inquiry](mailto:nomankhan30n@gmail.com?subject=Hiring%20Inquiry)** — for ongoing or contract work
+- **[Just want to collaborate](mailto:nomankhan30n@gmail.com?subject=Collaboration)** — open to that too
 
-## 🌐 Connect With Me
-
-<div align="center">
-
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:nomankhan30n@gmail.com)
-[![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=flat-square&logo=wordpress&logoColor=white)](http://nomanameen.vercel.app)
-
-</div>
+[nomankhan30n@gmail.com](mailto:nomankhan30n@gmail.com) · [nomanameen.vercel.app](https://nomanameen.vercel.app) · [github.com/Noman-Amin30n](https://github.com/Noman-Amin30n)
 
 ---
 
-## 💬 Let's Talk!
-
-I'm always interested in discussing new projects, creative ideas, and potential collaborations. Feel free to reach out!
-
 <div align="center">
 
-**⭐ If you find my work interesting, don't forget to star my repositories!**
+### GitHub Stats
+
+<img src="https://github-readme-stats.vercel.app/api?username=Noman-Amin30n&theme=tokyonight&show_icons=true&hide_border=true" alt="Noman's GitHub stats" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Noman-Amin30n&theme=tokyonight&layout=compact&hide_border=true" alt="Top languages" width="45%" />
+
+![Profile Views](https://komarev.com/ghpvc/?username=Noman-Amin30n&color=blueviolet&style=flat-square)
 
 </div>
 
 ---
 
 <div align="center">
-
-![Profile Views](https://komarev.com/ghpvc/?username=Noman-Amin30&color=blueviolet&style=flat-square)
-
-*Last Updated: March 20, 2026*
-
+<sub>If this looks like a fit for what you need, send me an email — happy to talk through the scope.</sub>
 </div>
