@@ -144,7 +144,15 @@ Have any projects in mind? It would be easy for you to connect with me through e
 - **[Hiring inquiry](mailto:nomankhan30n@gmail.com?subject=Hiring%20Inquiry)** — for hire or contract work
 - **[Just want to collaborate](mailto:nomankhan30n@gmail.com?subject=Collaboration)** — open to that too
 
-<p align="center"> <a href="mailto:nomankhan30n@gmail.com"> <img src="https://img.shields.io/badge/Email%20Me-2ea44f?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Me"> </a> &nbsp;&nbsp; <a href="https://nomanameen.vercel.app"> <img src="https://img.shields.io/badge/Portfolio-24292f?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit My Portfolio"> </a> </p>
+<p align="center"> 
+  <a href="mailto:nomankhan30n@gmail.com"> 
+    <img src="https://img.shields.io/badge/Email%20Me-2ea44f?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Me">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://nomanameen.vercel.app">
+    <img src="https://img.shields.io/badge/Portfolio-24292f?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit My Portfolio">
+  </a>
+</p>
 
 ---
 
@@ -152,8 +160,9 @@ Have any projects in mind? It would be easy for you to connect with me through e
 
 ### GitHub Stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=Noman-Amin30n&theme=tokyonight&show_icons=true&hide_border=true" alt="Noman's GitHub stats" width="48%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Noman-Amin30n&theme=tokyonight&layout=compact&hide_border=true" alt="Top languages" width="45%" />
+[![GitHub Stats](https://github-stats-extended.vercel.app/api?username=Noman-Amin30n&custom_title=My%20GitHub%20Stats&show_icons=true&include_all_commits=true&theme=tokyonight)](https://github-stats-extended.vercel.app/api?username=Noman-Amin30n&custom_title=My%20GitHub%20Stats&show_icons=true&include_all_commits=true&theme=tokyonight)
+&nbsp;&nbsp;
+[![GitHub Stats](https://github-stats-extended.vercel.app/api/top-langs?username=Noman-Amin30n&layout=donut&langs_count=4&theme=tokyonight)](https://github-stats-extended.vercel.app/api/top-langs?username=Noman-Amin30n&layout=donut&langs_count=4&theme=tokyonight)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Noman-Amin30n&color=blueviolet&style=flat-square)
 
