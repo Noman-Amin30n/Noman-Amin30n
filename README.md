@@ -49,23 +49,23 @@ There are some things I always pay attention to in every project:
 
 ## Some Things I've Built
 
-**E-commerce platform + admin dashboard**
-Full frontend store with backend for management of products, orders, and customers. This one is from my portfolio, so I consider it the most polished one of all projects below.
-Stack: Next.js, TypeScript, MongoDB, deployed on Vercel.
+**E-commerce platform + admin dashboard**<br>
+Full frontend store with backend for management of products, orders, and customers. This one is from my portfolio, so I consider it the most polished one of all projects below.<br>
+Stack: Next.js, TypeScript, MongoDB, deployed on Vercel.<br>
 → [view repo](https://github.com/Noman-Amin30n/Ecommerce_Next)
 
-**MedStore — stock & billing system for a pharmacy**
-This project is for a real-life customer, not a portfolio one. The local medical store used manual accounting for their inventory management and invoicing. This application includes batch expiry support (oldest product sells first, automatically), invoicing in PDF format, and comprehensive logging of every operation made with the stocks. It was built in phases starting from authentication/authorization and the core infrastructure, then adding inventory and billing modules.
-Stack: Next.js 14, TypeScript in strict mode, MongoDB/Mongoose, Zod, JWT.
+**MedStore — stock & billing system for a pharmacy**<br>
+This project is for a real-life customer, not a portfolio one. The local medical store used manual accounting for their inventory management and invoicing. This application includes batch expiry support (oldest product sells first, automatically), invoicing in PDF format, and comprehensive logging of every operation made with the stocks. It was built in phases, starting from authentication/authorization and the core infrastructure, then adding inventory and billing modules.<br>
+Stack: Next.js 14, TypeScript in strict mode, MongoDB/Mongoose, Zod, JWT.<br>
 🔒 Private repository (customer project) — will be glad to demo this one live for you
 
-**AI chat platform**
-Real-time chat application with an AI layer for providing context-aware responses.
-Stack: Next.js 16, Vercel AI SDK.
+**AI chat platform**<br>
+Real-time chat application with an AI layer for providing context-aware responses.<br>
+Stack: Next.js 16, Vercel AI SDK.<br>
 → [view repo](https://github.com/Noman-Amin30n/AI-Chats-Next)
 
-**Code snippets manager**
-Code snippets management application with authentication and full CRUD support, syntax highlighting included.
+**Code snippets manager**<br>
+Code snippets management application with authentication and full CRUD support, syntax highlighting included.<br>
 → [view repo](https://github.com/Noman-Amin30n/Snippets-app)
 
 <details>
@@ -140,11 +140,11 @@ Response time is usually 24 hours.
 
 Have any projects in mind? It would be easy for you to connect with me through email.
 
-- **[Ask about project](mailto:nomankhan30n@gmail.com?subject=Project%20Inquiry)** — let me know what you want to develop
+- **[Project Inquiry](mailto:nomankhan30n@gmail.com?subject=Project%20Inquiry)** — let me know what you want to develop
 - **[Hiring inquiry](mailto:nomankhan30n@gmail.com?subject=Hiring%20Inquiry)** — for hire or contract work
 - **[Just want to collaborate](mailto:nomankhan30n@gmail.com?subject=Collaboration)** — open to that too
 
-[nomankhan30n@gmail.com](mailto:nomankhan30n@gmail.com) · [nomanameen.vercel.app](https://nomanameen.vercel.app) · [github.com/Noman-Amin30n](https://github.com/Noman-Amin30n)
+<p align="center"> <a href="mailto:nomankhan30n@gmail.com"> <img src="https://img.shields.io/badge/Email%20Me-2ea44f?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Me"> </a> &nbsp;&nbsp; <a href="https://nomanameen.vercel.app"> <img src="https://img.shields.io/badge/Portfolio-24292f?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit My Portfolio"> </a> </p>
 
 ---
 
