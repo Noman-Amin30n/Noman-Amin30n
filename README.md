@@ -29,8 +29,8 @@ There are some things I always pay attention to in every project:
 
 - I always think about the data model and the API before I start writing any code for a component. If I skip this step, the project can become a mess a few weeks later.
 - Authentication, checking the inputs, and making sure the queries run fast are not things I add at the end. I include them from the beginning.
-- If the work is for a client the application needs to work in production not just look good in a demo.
-- I will explain things in words if you are not familiar, with technology.. If you know what you are doing I won't waste time holding your hand.
+- If the work is for a client, the application needs to work in production, not just look good in a demo.
+- I will explain things in words if you are not familiar with technology. If you know what you are doing, I won't waste time holding your hand.
 
 ---
 
@@ -38,34 +38,34 @@ There are some things I always pay attention to in every project:
 
 | Service | What that actually means |
 |---|---|
-| **Full-stack web apps** | Next.js frontend, an API layer (Express or Next.js route handlers), MongoDB behind it, deployed and working |
-| **E-commerce & admin dashboards** | Storefront plus the boring-but-necessary backend: inventory, orders, customer data, basic analytics |
-| **Business systems** | Inventory tracking, billing/invoicing, that kind of internal tooling most off-the-shelf software gets wrong for your specific process |
-| **Frontend builds** | Turning a design or a rough idea into a working React/Next.js UI with Tailwind and ShadCN, responsive by default |
-| **APIs** | REST APIs, typed Mongoose schemas, proper validation — built to be used by more than one client if needed |
-| **Maintenance & new features** | Jumping into an existing Next.js/MERN codebase without breaking what already works |
+| **Full-stack web apps** | Next.js frontend, an API layer (either Express or Next.js routes), with MongoDB underneath it, all up and running |
+| **E-commerce & admin dashboards** | Storefront and the dull but necessary backend: inventory management, order tracking, customer information, basic analytics |
+| **Business systems** | Inventory management, billing/invoicing, all those internal tools that off-the-shelf solutions get so wrong for you |
+| **Frontend builds** | Bringing a design or a mere concept to life as a fully functional React/Next.js UI using Tailwind & ShadCN, by default responsive |
+| **APIs** | RESTful APIs, typed Mongoose schemas, good validation — built to support multiple clients if required |
+| **Maintenance & new features** | Quickly getting up to speed with the existing Next.js / MERN stack without breaking what’s currently there |
 
 ---
 
 ## Some Things I've Built
 
 **E-commerce platform + admin dashboard**
-A full storefront paired with an admin side for managing products, orders, and customers. Built this as my main portfolio piece, so it's the most "finished" of everything here.
+Full frontend store with backend for management of products, orders, and customers. This one is from my portfolio, so I consider it the most polished one of all projects below.
 Stack: Next.js, TypeScript, MongoDB, deployed on Vercel.
 → [view repo](https://github.com/Noman-Amin30n/Ecommerce_Next)
 
 **MedStore — stock & billing system for a pharmacy**
-This one's real client work, not a portfolio project. A local medical store was tracking inventory and writing invoices by hand. Built a system that handles batch expiry (oldest stock sells first, automatically), generates PDF invoices, and keeps a full audit trail of every stock movement. Went through it in phases — auth and foundation first, then inventory, then billing.
+This project is for a real-life customer, not a portfolio one. The local medical store used manual accounting for their inventory management and invoicing. This application includes batch expiry support (oldest product sells first, automatically), invoicing in PDF format, and comprehensive logging of every operation made with the stocks. It was built in phases starting from authentication/authorization and the core infrastructure, then adding inventory and billing modules.
 Stack: Next.js 14, TypeScript in strict mode, MongoDB/Mongoose, Zod, JWT.
-🔒 Private repo (client project) — happy to walk through it live
+🔒 Private repository (customer project) — will be glad to demo this one live for you
 
 **AI chat platform**
-Real-time chat app with an AI layer for context-aware responses.
-Stack: Next.js 16, real-time messaging.
+Real-time chat application with an AI layer for providing context-aware responses.
+Stack: Next.js 16, Vercel AI SDK.
 → [view repo](https://github.com/Noman-Amin30n/AI-Chats-Next)
 
 **Code snippets manager**
-A tool for saving and organizing code snippets — auth, full CRUD, syntax highlighting across languages.
+Code snippets management application with authentication and full CRUD support, syntax highlighting included.
 → [view repo](https://github.com/Noman-Amin30n/Snippets-app)
 
 <details>
@@ -79,23 +79,23 @@ A tool for saving and organizing code snippets — auth, full CRUD, syntax highl
 
 ## The MedStore Case Study (short version)
 
-The store owner was tracking stock and writing invoices by hand — the usual problems: stock counts that didn't match reality, expired batches sold ahead of older ones, no record of who changed what.
+The owner was using paper to track stock levels and create invoices — stock discrepancies, selling newer stock batches before old ones, and failure to record who made any modifications were the norm.
 
-I worked through it spec-first: wrote out the data model and rules before touching UI code (things like "stock quantities always stored in base units, converted for display" and "oldest-expiring batch sells first, no exceptions"). Every multi-step write — sell an item, adjust stock, log the change — happens as one atomic transaction, so a crash mid-sale can't leave the numbers wrong. Invoices are snapshotted when they're created, so they remain accurate even if a product's price changes later.
+The design followed a spec-first approach: I documented the data schema and all its rules first before writing UI code ("always keep stock levels in base unit, convert for display", "sell the oldest expiring batch first, no exceptions"). Any multi-write process — sale, stock adjustment, and change recording — is done atomically, which prevents data corruption in case of unexpected crashes during the sale process. Invoices are automatically recorded at the moment of their creation, preventing inaccurate invoices due to any later product price change.
 
-Shipped in three phases: auth and foundation, then inventory, then billing and invoicing.
+Deployment followed three phases: auth and infrastructure, then inventory, and then invoicing.
 
 ---
 
 ## How I Work
 
-Roughly, this is how a project goes:
+Here is a brief description of the process:
 
-1. **Talk it through** — what are you actually trying to solve, not just what feature you think you need
-2. **Write the spec** — data model, API contract, how the screens fit together, before any real code
-3. **Build in chunks** — you see working pieces along the way, not one big reveal at the end
-4. **Harden it** — validation, error handling, and the security basics get checked before anything ships
-5. **Ship and stick around** — help with deployment, plus a window afterward for fixes
+1. **Brainstorm** — figure out what problem the solution will actually address rather than what feature is needed.
+2. **Create specification** — including data models, the API specification, and screen interactions before actual coding.
+3. **Develop in small pieces** — see functional results during the development process rather than all at the end.
+4. **Strengthen your application** — validate data, handle errors, add basic security.
+5. **Deploy and stay after** — assist with deployment and be available for the next while to make adjustments.
 
 ```
 Inquiry → Scope & quote → Spec → Build → Review → Deploy → Support
@@ -122,26 +122,26 @@ Inquiry → Scope & quote → Spec → Build → Review → Deploy → Support
 - Full Stack Web Development — coursework/certification
 - AI agent integration & chatbot development
 - Built and shipped MedStore end-to-end for a real client, spec to deployment
-- Working through [100 Days of TypeScript](https://github.com/Noman-Amin30n/100-Days-Typescript-Challenge) — still going
 
 ---
 
 ## Availability
 
-Currently open for freelance work and entry-level remote roles. Mostly targeting the US, UK, Canada, and Australia — time zone difference isn't a problem; I work async well.
+Available for freelance work and entry-level jobs from home.
+Primarily interested in positions in the USA, UK, Canada, and Australia; a time zone difference is not an issue as I’m great at asynchronous work.
 
-`I can realistically take on 1–2 projects at a time while maintaining quality and meeting deadlines. Open to freelance contracts, part-time opportunities, and full-time entry-level roles.`
+`I can take on 1-2 projects simultaneously while still delivering good results on time. Freelance and part-time positions are welcome, as well as full-time entry-level jobs.`
 
-Usually reply within 24 hours.
+Response time is usually 24 hours.
 
 ---
 
 ## Get in Touch
 
-Got a project in mind? The easiest way to reach me is by email.
+Have any projects in mind? It would be easy for you to connect with me through email.
 
-- **[Send a project inquiry](mailto:nomankhan30n@gmail.com?subject=Project%20Inquiry)** — tell me what you're trying to build
-- **[Hiring inquiry](mailto:nomankhan30n@gmail.com?subject=Hiring%20Inquiry)** — for ongoing or contract work
+- **[Ask about project](mailto:nomankhan30n@gmail.com?subject=Project%20Inquiry)** — let me know what you want to develop
+- **[Hiring inquiry](mailto:nomankhan30n@gmail.com?subject=Hiring%20Inquiry)** — for hire or contract work
 - **[Just want to collaborate](mailto:nomankhan30n@gmail.com?subject=Collaboration)** — open to that too
 
 [nomankhan30n@gmail.com](mailto:nomankhan30n@gmail.com) · [nomanameen.vercel.app](https://nomanameen.vercel.app) · [github.com/Noman-Amin30n](https://github.com/Noman-Amin30n)
