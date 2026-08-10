@@ -128,9 +128,9 @@ Inquiry → Scope & quote → Spec → Build → Review → Deploy → Support
 
 ## Availability
 
-Currently open for freelance work and entry-level remote roles. Mostly targeting the US, UK, Canada, and Australia — time zone difference isn't a problem, I work async well.
+Currently open for freelance work and entry-level remote roles. Mostly targeting the US, UK, Canada, and Australia — time zone difference isn't a problem; I work async well.
 
-`[Fill in: how many projects you can realistically take at once, and whether you prefer contract, part-time, or full-time]`
+`I can realistically take on 1–2 projects at a time while maintaining quality and meeting deadlines. Open to freelance contracts, part-time opportunities, and full-time entry-level roles.`
 
 Usually reply within 24 hours.
 
