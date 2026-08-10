@@ -4,7 +4,7 @@
 
 ### Full-stack developer working mainly in Next.js, TypeScript, and MongoDB
 
-**If "I need a working website/app and someone I can actually talk to about it" sounds like you, keep reading.**
+**If you are saying "I need a working website or app and someone I can actually talk to about it," then this is for you, so please keep reading.**
 
 [![Email](https://img.shields.io/badge/Email-nomankhan30n%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:nomankhan30n@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-nomanameen.vercel.app-000000?style=flat-square&logo=vercel&logoColor=white)](https://nomanameen.vercel.app)
