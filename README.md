@@ -23,14 +23,14 @@
 
 ## About
 
-I've been building web apps full-time for a bit over three years now, mostly on the Next.js/TypeScript/MongoDB stack — data model to deployment, not just the UI layer. Most of my work has been for small businesses and solo founders who need something built right the first time, since they usually can't afford to have it rebuilt six months later.
+I've been working on web applications for more than three years now. I mostly use the Next.js, TypeScript, and MongoDB stack. I handle everything from the data model to the deployment. It's not the user interface part that I work on. A lot of the projects I do are for businesses and people who start their own businesses. These people need something that is built the first time correctly because they usually don't have the money to rebuild it again in a few months.
 
-A few things I care about on every project:
+There are some things I always pay attention to in every project:
 
-- I plan the data model and API before I open a component file. Skipping this is how projects turn into a mess three weeks in.
-- Auth, input validation, and query performance aren't things I bolt on at the end — they're part of the first draft.
-- If it's client work, it needs to actually run in production, not just look good in a demo.
-- I'll explain things in plain terms if you're not technical, and skip the hand-holding if you are.
+- I always think about the data model and the API before I start writing any code for a component. If I skip this step, the project can become a mess a few weeks later.
+- Authentication, checking the inputs, and making sure the queries run fast are not things I add at the end. I include them from the beginning.
+- If the work is for a client the application needs to work in production not just look good in a demo.
+- I will explain things in words if you are not familiar, with technology.. If you know what you are doing I won't waste time holding your hand.
 
 ---
 
